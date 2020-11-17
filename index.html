@@ -1,9 +1,158 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Welcome to the future home of Pandemonium Brew Co</h1>
-<img src="pandhires1.jpg">
-<p><b>Coming Q4 2021<b></p>
-</body>
-</html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Section -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="An upcoming brewery">
+        <meta name="keywords" content="beer, brewery, connecticut">
 
+        <!-- Title Section -->
+        <title>Pandemonium Brew Co. - Chemistry. Chaos. Beer.</title>
+
+        <!-- Favicon Section -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Fonts Section -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet"> 
+
+        <!-- CSS Styles Section -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/brands.min.css">
+        <link rel="stylesheet" href="./css/solid.min.css">
+        <link rel="stylesheet" href="./css/fontawesome.min.css">
+        <link rel="stylesheet" href="./css/aos.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/theme/dark.css">
+    </head>
+    <body class="text-center">
+        <!-- Loading Section -->
+        <div id="loading">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+
+        <div id="main-container" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="background-image: url('./img/backgrounds/bg-1.png');">
+            <!-- Header Section -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Logo Section -->
+                    <div class="justify-content-start">
+                        <span class="navbar-brand"><b><i>Pandemonium Brew Co.</i></b> <span class="navbar-brand-headline text-muted"> | Chemistry. Chaos. Beer. </span></span>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Counter Section -->
+            <main class="inner cover">
+                <div class="container">
+                    <div class="row cover-heading">
+                        <div class="col-sm">
+                            <div>
+                                <span><h1>Coming soon.</h1></span>
+                            </div>
+                            <div>
+                                <small>A new exploration into the world of beer.</small>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- Insert your date below (YYYY-MM-DDTHH:MM:SS) -->
+                    <div id="js-counter" data-setTime="2021-12-18T00:00:00" class="row counter">
+                        <div class="col-sm">
+                            <div class="square">
+                                <div class="content">
+                                    <span id="js-counter-days"></span><br>
+                                    <span>days</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="square">
+                                <div class="content">
+                                    <span id="js-counter-hours"></span><br>
+                                    <span>hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="square">
+                                <div class="content">
+                                    <span id="js-counter-minutes"></span><br>
+                                    <span>minutes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="square">
+                                <div class="content">
+                                    <span id="js-counter-seconds"></span><br>
+                                    <span>seconds</span>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+        
+        <!-- Footer Section -->
+        <footer class="footer mt-auto py-4">
+            <!-- Subscribe Section -->
+
+
+
+                    <!-- Social Section -->
+                    <div class="col-sm text-right socialsect">
+			<a href="http://www.instagram.com/pandemoniumbrewco"<i class="fab fa-instagram"></a>   
+                        <a href="https://www.facebook.com/Pandemonium-Brew-Co-110366750868715"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/PandemoniumBrew"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="./js/js-counter-1.0.0.js"></script>
+        <script src="./js/js-slideshowbg-1.0.0.js"></script>
+        <script type="text/javascript">
+            /*
+            * Image slideshow
+            */
+
+            // List of backgrounds <-- Insert below yours
+            var listOfBackgrounds =
+            [
+                "./img/backgrounds/bg-0.png",
+                "./img/backgrounds/bg-1.png",
+                "./img/backgrounds/bg-2.png",
+                "./img/backgrounds/bg-3.png",
+                "./img/backgrounds/bg-4.png",
+            ],
+            intervalInSeconds = 3;
+
+            $(document).ready(function() {
+                activateSlideshow($("#main-container"), listOfBackgrounds, intervalInSeconds);
+            });
+        </script>
+        <script src="./js/animatescroll.min.js"></script>
+        <script type="text/javascript">
+            /*
+            * Scroll-down
+            */
+
+            $('#scrolldown-icon').click(function() {
+                $('footer').animatescroll();
+            });
+        </script>
+    </body>
+</html>
